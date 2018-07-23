@@ -4,10 +4,10 @@ body{
     color: white;
 }
 header{
-    position: static;
+    position: relative;
     opacity: 0;
-    background: linear-gradient( rgb(0, 0, 0) , rgb(75, 75, 75) , rgb(0, 0, 0));
-    padding: 20px 10px;
+    /* background: linear-gradient( rgb(0, 0, 0), rgb(0, 0, 0) , rgb(75, 75, 75) , rgb(0, 0, 0) , rgb(0, 0, 0)); */
+    padding: 0 2%;
     margin: 20px 0;
 }
 h1{
@@ -16,15 +16,24 @@ h1{
 
 
 /* class for header items */
+.heading1{
+    text-align: left;
+    padding-bottom: 1%;
+    
+}
 .inside-heading{
-    color: rgb(212, 0, 0);
     font-size: 24px;
+    color: rgb(83, 83, 83)
+}
+.heading2{
+    text-align: right;
+    padding-top: 1%;
 }
 
 
 /* main content div */
 .main-content{
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -35,7 +44,7 @@ h1{
     opacity: 0;
     position: relative;
     width: 30%;
-    top: 5%;
+    top: 10%;
     display: block;
     margin: auto;
     -webkit-transition: width 0.8s;
@@ -231,4 +240,10 @@ h1{
 .back-arrow-div:hover{
     width: 4%;
     cursor: pointer;
+}
+
+
+/* hiding class */
+.hidden-element{
+    display: none;
 }
