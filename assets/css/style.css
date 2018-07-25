@@ -26,17 +26,18 @@
     .web-portfolio{
         padding: 5px;
         text-align: center;
-        background: rgb(0, 0, 0);
         border: solid 2px rgb(209, 209, 209);
-        border-radius: 5px;
         width: 30%;
-        margin-left: -140px;
+        border-radius: 5px;
+        
+        margin-left: -260px;
         float: left;
     }
     .portfolio-icon{
         opacity: 1;
         width: 20%;
         z-index: 1;
+
         float: right;
     }
     .portfolio-label{
@@ -48,14 +49,16 @@
         text-align: center;
         border: solid 2px rgb(209, 209, 209);
         width: 30%;
-        margin-right: -140px;
         border-radius: 5px;
+
+        margin-right: -260px;
         float: right;
     }
     .contact-icon{
         opacity: 1;
         width: 20%;
         z-index: 1;
+
         float: left;
     }
     .contact-label{
@@ -64,7 +67,7 @@
     }
 }
 
-/* TABLET QUERY */
+/* TABLET QUERY (and up)*/
 @media only screen and (min-width: 769px) {
     header{
         padding: 10px 20px;
@@ -74,7 +77,7 @@
     }
     .inside-heading{
         display: inline;
-        font-size: 30px;
+        font-size: 24px;
     }
     .home-pic-div{
         width:400px;
@@ -124,26 +127,27 @@
     }
     .web-portfolio{
         font-size: 36px;
-        position: absolute;
+        position: fixed;
         text-align: center;
-        top: 15%;
-        left:-35%;
         background: rgb(0, 0, 0);
         border: solid 6px rgb(209, 209, 209);
         border-radius: 10px;
         width: 30%;
-        /* height: inherit; */
-        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
+        height: 15%;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+
+        top: 15%;
+        left: -35%;
     }
     .portfolio-icon{
         opacity: 1;
-        position: relative;
-        right: -30%;
-        width: 30%;
-        /* height: 70%; */
+        position: absolute;
+        right: 5%;
+        height: 80%;
+        top: 10%;
         -webkit-transition:opacity 0.8s ease;
         -moz-transition: opacity 0.8s ease;
         -o-transition: opacity 0.8s ease;
@@ -158,15 +162,16 @@
         color: rgb(0, 0, 0);
     
     }
-    .web-portfolio:hover{
+    .portfolio-hover:hover{
         width: 40%;
+        height: 20%;
         cursor: pointer;
         background-color: rgb(209, 209, 209);
         color: rgb(0, 0, 0);
-        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
     }
     .web-portfolio:hover .portfolio-icon{
         opacity: 0;
@@ -176,13 +181,14 @@
         border: solid 6px rgb(209, 209, 209);
         width: 30%;
         border-radius: 10px;
-        position: absolute;
-        top: 15%;
-        right:-35%;
+        position: fixed;
         -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s;
         -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
         -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
         transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
+
+        top: 15%;
+        right:-35%;
     }
     .contact-icon{
         opacity: 1;
@@ -219,7 +225,7 @@
 }
 
 /* LAPTOP QUERY */
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1030px){
     h1{
         font-size: 60px;
     }
@@ -236,9 +242,9 @@
 }
 
 /* DESKTOP QUERY */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1204px){
     h1{
-        font-size: 72px;
+        font-size: 60px;
     }
     .inside-heading{
         font-size: 48px;
@@ -255,7 +261,7 @@
 
 
 .inside-heading{
-    color: rgb(83, 83, 83)
+    color: rgb(107, 107, 107)
 }
 body{
     background-color:rgb(0, 0, 0);
@@ -298,44 +304,32 @@ header{
 }
 /* about me item classes */
 .about-me-div{
-    margin: auto;
+    margin: 5% auto;
     width: 70%;
     padding: 20px;
     opacity: 0;
     color: rgb(0, 0, 0);
     background-color: rgb(209, 209, 209);
-    -moz-box-shadow:    inset 0 0 20px 10px #000000;
-    -webkit-box-shadow: inset 0 0 20px 10px #000000;
-    box-shadow:         inset 0 0 20px 10px #000000;
+    -moz-box-shadow:    0 0 15px 15px rgb(209, 209, 209);
+    -webkit-box-shadow: 0 0 15px 15px rgb(209, 209, 209);
+    box-shadow:         0 0 15px 15px rgb(209, 209, 209);
 }
 /* potfolio item classes */
 .web-portfolio{ 
     text-align: center;
     background: rgb(0, 0, 0);
+    overflow: scroll;
 }
 /* contact item classes */
 .contact-div{
     text-align: center;
     background: rgb(0, 0, 0);
 }
-
-/* ------------------------------------------------------------------------------- */
-
-/* --------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
 /* back arrow styling */
 .back-arrow-div{
     width: 3%;
-    position: absolute;
-    top: 2%;
+    position: fixed;
+    top: 18%;
     left: -4%;
     opacity: 0;
     -webkit-transition:width 0.5s;
@@ -355,4 +349,48 @@ header{
 /* hiding class */
 .hidden-element{
     display: none;
+}
+
+.portfolio-content{
+    position: relative;
+    opacity: 0;
+}
+/*  */
+.portfolio-item{
+    position: relative;
+    display: block;
+    border: solid 4px rgb(209, 209, 209);
+    text-align: left;
+    
+}
+.portfolio-item:link, .portfolio-item:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: auto;
+}
+.portfolio-item-label{
+    display: inline-block;
+    font-size: 48px;
+}
+.portfolio-image{
+    display: inline-block;
+}
+.portfolio-item-description{
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    display: inline;
+    z-index: -1;
+}
+.image-label-div{
+    position: relative;
+    left:0;
+    background-color: rgb(107, 107, 107)
+}
+
+.portfolio-item:hover{
+    cursor: pointer;
+    -moz-box-shadow:    inset 0 0 15px 15px rgb(213, 241, 241);
+    -webkit-box-shadow: inset 0 0 15px 15px rgb(213, 241, 241);
+    box-shadow:         inset 0 0 15px 15px rgb(213, 241, 241);
 }
