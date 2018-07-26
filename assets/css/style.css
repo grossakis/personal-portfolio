@@ -10,6 +10,9 @@
         display: block;
         font-size: 24px;
     }
+    .about-me-div{
+        width: 60%;
+    }
     .home-pic-div{
         width:300px;
         top:0;
@@ -24,12 +27,12 @@
         font-size: 14px;
     }
     .web-portfolio{
+        position: relative;
         padding: 5px;
         text-align: center;
-        border: solid 2px rgb(209, 209, 209);
+        border: solid 2px rgb(255, 255, 255);
         width: 30%;
         border-radius: 5px;
-        
         margin-left: -260px;
         float: left;
     }
@@ -37,7 +40,6 @@
         opacity: 1;
         width: 20%;
         z-index: 1;
-
         float: right;
     }
     .portfolio-label{
@@ -47,10 +49,9 @@
     .contact-div{
         padding: 5px;
         text-align: center;
-        border: solid 2px rgb(209, 209, 209);
+        border: solid 2px rgb(255, 255, 255);
         width: 30%;
         border-radius: 5px;
-
         margin-right: -260px;
         float: right;
     }
@@ -130,7 +131,7 @@
         position: fixed;
         text-align: center;
         background: rgb(0, 0, 0);
-        border: solid 6px rgb(209, 209, 209);
+        border: solid 6px rgb(255, 255, 255);
         border-radius: 10px;
         width: 30%;
         height: 15%;
@@ -138,7 +139,6 @@
         -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
         -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
         transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
-
         top: 15%;
         left: -35%;
     }
@@ -162,11 +162,11 @@
         color: rgb(0, 0, 0);
     
     }
-    .portfolio-hover:hover{
+    .item-hover:hover{
         width: 40%;
         height: 20%;
         cursor: pointer;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
         -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
@@ -178,23 +178,26 @@
     }
     .contact-div{
         font-size: 36px;
-        border: solid 6px rgb(209, 209, 209);
-        width: 30%;
-        border-radius: 10px;
         position: fixed;
-        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-
+        text-align: center;
+        background: rgb(0, 0, 0);
+        border: solid 6px rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 30%;
+        height: 15%;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
         top: 15%;
         right:-35%;
     }
     .contact-icon{
         opacity: 1;
-        position: relative;
-        left: -30%;
-        width: 30%;
+        position: absolute;
+        left: 5%;
+        height: 80%;
+        top: 10%;
         -webkit-transition:opacity 0.8s ease;
         -moz-transition: opacity 0.8s ease;
         -o-transition: opacity 0.8s ease;
@@ -209,18 +212,75 @@
         color: rgb(0, 0, 0);
     
     }
-    .contact-div:hover{
+    /* .contact-hover:hover{
         width: 40%;
+        height: 20%;
         cursor: pointer;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
-        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s;
-    }
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+    } */
     .contact-div:hover .contact-icon{
         opacity: 0;
+    }
+    .external-link{
+        background: rgb(0, 0, 0);
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+    }
+    .external-link:hover{
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+    }
+    
+    .github-link{
+        position: fixed;
+        bottom: -30%;
+        left: 5%;
+    }
+    .linkedin-link{
+        position: fixed;
+        bottom: -30%;
+        right: 5%;
+    }
+    .external-icon{
+        position: absolute;
+        opacity: 1;
+        width: 100%;
+        z-index: 1;
+        -webkit-transition:opacity 0.8s;
+        -moz-transition: opacity 0.8s;
+        -o-transition: opacity 0.8s;
+        transition: opacity 0.8s ease;
+    }
+    .external-link:hover .external-icon{
+        opacity: 0;
+        -webkit-transition:opacity 0.8s;
+        -moz-transition: opacity 0.8s;
+        -o-transition: opacity 0.8s;
+        transition: opacity 0.8s ease;
+    }
+    .external-logo{
+        width: 80%;
+        z-index: 0;
+        position: absolute;
+        top: 50px;
+        padding-left: 10px;
     }
 }
 
@@ -270,13 +330,17 @@ body{
 header{
     position: relative;
     opacity: 0;
+    margin-bottom: 10px;
 }
 /* main content div */
 .main-content{
+    margin-top:10px;
     position: relative;
+    top:0;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 /* central image */
 .home-pic-div{
@@ -297,7 +361,7 @@ header{
     display: block;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%,rgb(0, 0, 0) 70%,rgb(0, 0, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 30%,rgb(0, 0, 0) 70%,rgb(0, 0, 0) 100%);
     position: absolute;
     top: 0; 
     left: 0;
@@ -306,19 +370,19 @@ header{
 .about-me-div{
     margin: 5% auto;
     width: 70%;
-    padding: 20px;
+    padding: 2%;
     opacity: 0;
     color: rgb(0, 0, 0);
-    background-color: rgb(209, 209, 209);
-    -moz-box-shadow:    0 0 15px 15px rgb(209, 209, 209);
-    -webkit-box-shadow: 0 0 15px 15px rgb(209, 209, 209);
-    box-shadow:         0 0 15px 15px rgb(209, 209, 209);
+    background-color: rgb(255, 255, 255);
+    -moz-box-shadow:    0 0 15px 15px rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 15px 15px rgb(255, 255, 255);
+    box-shadow:         0 0 15px 15px rgb(255, 255, 255);
 }
 /* potfolio item classes */
 .web-portfolio{ 
     text-align: center;
     background: rgb(0, 0, 0);
-    overflow: scroll;
+    overflow: visible;
 }
 /* contact item classes */
 .contact-div{
@@ -354,12 +418,13 @@ header{
 .portfolio-content{
     position: relative;
     opacity: 0;
+    overflow-x: hidden;
 }
 /*  */
 .portfolio-item{
     position: relative;
     display: block;
-    border: solid 4px rgb(209, 209, 209);
+    border: solid 4px rgb(255, 255, 255);
     text-align: left;
     
 }
@@ -374,6 +439,8 @@ header{
 }
 .portfolio-image{
     display: inline-block;
+    height: 200px;
+    width: 200px;
 }
 .portfolio-item-description{
     margin: 20px;
@@ -393,4 +460,30 @@ header{
     -moz-box-shadow:    inset 0 0 15px 15px rgb(213, 241, 241);
     -webkit-box-shadow: inset 0 0 15px 15px rgb(213, 241, 241);
     box-shadow:         inset 0 0 15px 15px rgb(213, 241, 241);
+}
+
+.contact-content{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 100%;
+}
+.contact-content h3{
+    padding: 24px;
+}
+.contact-box{
+    width: 80%;
+    height: 24px;
+    border-radius: 5px;
+}
+.message-box{
+    width: 80%;
+    height: 72px;
+    border-radius: 5px;
+}
+.submit-button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 24px;
 }
