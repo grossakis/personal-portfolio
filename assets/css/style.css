@@ -66,6 +66,42 @@
         font-size: 24px;
         color: rgb(255, 255, 255);
     }
+    .linkedin-link{
+        float: right;
+        margin-right: 20%;
+    }
+    .github-link{
+        clear: both;
+        float: left;
+        margin-left: 20%;
+    }
+    .external-icon{
+        width:30%
+    }
+    .external-link{
+        text-align: center;
+        width: 20%;
+        position: relative;
+        bottom: 0px;
+        margin-top: 400px;
+    }
+    .portfolio-content{
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .portfolio-image{
+        display: block;
+        margin: auto;
+        padding-top: 14%;
+        margin-bottom: 0;
+    }
+    .portfolio-item-label{
+        left: 15px;
+        display: inline-block;
+        font-size: 34px;
+        padding: 4%;
+        
+    }
 }
 
 /* TABLET QUERY (and up)*/
@@ -282,6 +318,19 @@
         top: 50px;
         padding-left: 10px;
     }
+    .portfolio-item-label{
+        position: relative;
+        bottom: 75px;
+        left: 15px;
+        display: inline-block;
+        font-size: 48px;
+    }
+    .portfolio-image{
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        margin-bottom: -9px;
+    }
 }
 
 /* LAPTOP QUERY */
@@ -373,10 +422,10 @@ header{
     padding: 2%;
     opacity: 0;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    -moz-box-shadow:    0 0 15px 15px rgb(255, 255, 255);
-    -webkit-box-shadow: 0 0 15px 15px rgb(255, 255, 255);
-    box-shadow:         0 0 15px 15px rgb(255, 255, 255);
+    background-color: rgb(209, 209, 209);
+    -moz-box-shadow:    0 0 15px 15px rgb(209, 209, 209);
+    -webkit-box-shadow: 0 0 15px 15px rgb(209, 209, 209);
+    box-shadow:         0 0 15px 15px rgb(209, 209, 209);
 }
 /* potfolio item classes */
 .web-portfolio{ 
@@ -433,16 +482,8 @@ header{
     text-decoration: none;
     cursor: auto;
 }
-.portfolio-item-label{
-    display: inline-block;
-    font-size: 48px;
-}
-.portfolio-image{
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-}
 .portfolio-item-description{
+    font-size: 24px;
     margin: 20px;
     position: absolute;
     top: 0;
@@ -452,9 +493,12 @@ header{
 .image-label-div{
     position: relative;
     left:0;
-    background-color: rgb(107, 107, 107)
+    background: linear-gradient(45deg , rgb(139, 139, 159), rgb(2, 2, 2) , rgb(85, 99, 99));
 }
-
+.portfolio-image{
+    height: 200px;
+    width: 200px;
+}
 .portfolio-item:hover{
     cursor: pointer;
     -moz-box-shadow:    inset 0 0 15px 15px rgb(213, 241, 241);
@@ -463,7 +507,7 @@ header{
 }
 
 .contact-content{
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(202, 202, 202), rgb(231, 231, 231) , rgb(201, 201, 201));
     color: rgb(0, 0, 0);
     height: 100%;
 }
@@ -481,9 +525,9 @@ header{
     border-radius: 5px;
 }
 .submit-button{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: solid 3px rgb(0, 0, 0);
+    background-color: rgb(73, 73, 73);
+    color: rgb(202, 202, 202);
+    /* border: solid 3px rgb(0, 0, 0); */
     border-radius: 4px;
     font-size: 24px;
 }

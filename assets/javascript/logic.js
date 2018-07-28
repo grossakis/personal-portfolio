@@ -1,4 +1,19 @@
 // $(window).resize(function(){location.reload();});
+var context;
+var $window = $(window);
+if ($window.width() <= 768) {
+    context = 'small';
+} else {
+    context = 'large';
+}
+$(window).resize(function() {
+    if(($window.width() <= 768) && (context != 'small')) {
+        location.reload();
+    } else if(context != 'large') {
+        location.reload();
+    }
+});
+
 var portfolioDiv = $('.web-portfolio');
 var contactDiv = $('.contact-div');
 var homePicDiv = $('.home-pic-div');
@@ -21,6 +36,8 @@ if($(window).width() <= 768){
     homePicDiv.delay(300).animate({ opacity: 1 }, 800);
     portfolioDiv.delay(600).animate({marginLeft: '40px'} , 800);
     contactDiv.delay(900).animate({marginRight: '40px'}, 800);
+    gitLink.delay(1200).animate({marginTop: '50px'} , 800);
+    linkedinLink.delay(1500).animate({marginTop: '50px'} , 800);
 
 
     homePicDiv.on('click' , function(){
