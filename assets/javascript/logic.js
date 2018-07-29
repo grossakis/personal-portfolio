@@ -1,4 +1,3 @@
-// $(window).resize(function(){location.reload();});
 var context;
 var $window = $(window);
 if ($window.width() <= 768) {
@@ -7,9 +6,9 @@ if ($window.width() <= 768) {
     context = 'large';
 }
 $(window).resize(function() {
-    if(($window.width() <= 768) && (context != 'small')) {
+    if(($window.width() <= 768) && (context === 'large')) {
         location.reload();
-    } else if(context != 'large') {
+    } else if(($window.width() > 768) && (context === 'small')) {
         location.reload();
     }
 });
