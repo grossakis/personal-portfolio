@@ -104,7 +104,7 @@ if($(window).width() <= 768){
                 $('.portfolio-content').animate({opacity: 0}, 600);
                 backArrowDiv.delay(600).animate({ left: '-4%' });
 
-                portfolioDiv.animate({height:'34px'})
+                portfolioDiv.animate({height:'40px'})
                 $('.portfolio-content').addClass("hidden-element");
                 portfolioDiv.animate({marginLeft: '15%' , width: '30%',height: 'initial', marginTop: '0'})
                 homePicDiv.removeClass('hidden-element');
@@ -168,7 +168,7 @@ if($(window).width() <= 768){
                 backArrowDiv.animate({opacity: 0}, 600);
                 $('.contact-content').animate({opacity: 0}, 600);
                 backArrowDiv.delay(600).animate({ left: '-4%' });
-                contactDiv.animate({height:'34px'})
+                contactDiv.animate({height:'40px'})
 
                 $('.contact-content').addClass("hidden-element");
                 contactDiv.animate({marginRight: '15%' , width: '30%' , height: 'initial' , marginTop: '0'})
