@@ -7,12 +7,15 @@
     <title>George's Web Portfolio</title>
     <!--link to reset.css-->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!--link to personal styling-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!--links to personal styling-->
+    <link rel="stylesheet" href="assets/css/style-desktop.css">
+    <link rel="stylesheet" href="assets/css/style-mobile.css">
     <!--jquery link-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<div class="maze-cover"></div>
 
 <header class="header-class">
     <h1>George Rossakis // <span class="inside-heading">FULL STACK WEB DEVELOPER</span></h1>
@@ -20,22 +23,26 @@
 
 
 <div class="main-content">
-
     <div class="back-arrow-div">
         <img class="back-arrow" src="assets/images/back_arrow.png"/>
     </div>
 
     <div class="home-pic-div">
-        <div class="hidden-cover"><span class="hov-label">About Me</span></div>
-        <img src="assets/images/my-pic.jpg" alt="my-pic" class="my-pic"/>
+        <div class="hidden-cover"><span class="hov-label">More About Me...</span></div>
+        <img src="assets/images/my-pic.jpeg" alt="my-pic" class="my-pic"/>
+        <hr/>
+        <div class="home-pic-div-text">
+            <span>I make web apps and sites for all types of projects. Check out some of my work and connect with me. Contact me with any questions or requests.</span>
+        </div>
     </div>
 
     <div class="about-me-div hidden-element">
+
+            <span>Welcome to my portfolio! I am a full stack developer with experience in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handlebars JS, & React Js</span>
         <p>Hello my name is George. I am a 26-year-old web developer and graphic designer. I live in Lyndhurst, NJ and am currently working in Sterling Fell and Landgraf Florist in Manhattan while freelancing on the side. I graduated from Temple University with a bachelor's degree in Art with a concentration in digital media. I am now attending the Rutgers Coding Bootcamp program to further my skills in digital media manipulation</p>
         <br>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque alias, corporis et natus, totam commodi unde itaque ab modi debitis optio sequi, numquam nam provident ratione repellat rem ullam iusto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, sequi eligendi. Magnam laboriosam asperiores voluptatibus, veritatis impedit excepturi exercitationem officiis hic minima neque assumenda temporibus consequuntur, pariatur delectus quod expedita.</p>
     </div>
-
     <div class="web-portfolio item-hover">
         <div class="display-label">
             <img src="assets/images/portfolio_icon_white.png" class="portfolio-icon"/>
@@ -43,37 +50,110 @@
         </div>
         <div class="portfolio-content hidden-element">
 
-            <a id="portfolio-item1" href="https://grossakis.github.io/Word-Guess-Game/" class="portfolio-item" target="_blank">
+            <a id="portfolio-item1" href="http://www.burner-pages.com/" class="portfolio-item" target="_blank">
+                <h2 class="mobile-portfolio-item-label">Burner Pages</h2>
                 <div id ="image-label-div1" class="image-label-div">
-                    <img src="assets/images/hangman-game-pic.png" class="portfolio-image"/>
-                    <h2 class="portfolio-item-label">Hangman Game</h2>
+                    <img src="assets/images/burner-pages-pic.png" class="portfolio-image"/>
+                    <h2 class="portfolio-item-label">Burner Pages</h2>
                 </div>
+                <div class="portfolio-item-description">
+                    This is a webpage building application that is used to create simple, single webpages. It is a full MERN stack application that uses Google User Authentication.
+                </div>
+            </a>
+            <div class="repo-link-container">
+                <a href="https://github.com/grossakis/burner-pages" target="_blank" class="repo-link">Click Here For Github Repo</a>
+            </div>
+            <div class="mobile-portfolio-buttons-div">
+                <a href="http://www.burner-pages.com/" target="_blank" class="mobile-portfolio-button">site</a>
+                <a href="https://github.com/grossakis/burner-pages" target="_blank" class="mobile-portfolio-button">repo</a>
                 
-                <p class="portfolio-item-description">
-                    Here is a hangman game I created. Players use the keyboard to guess letters and try and fill the blanks. Pretty straightforward. This one happens to have an animal theme. Overwatch theme coming soon!
-                </p>
-            </a>
+                <button class="mobile-portfolio-button" id="about-button1">about</button>
+            </div>
+            <hr class="portfolio-divider"/>
 
-            <a id="portfolio-item2" href="https://grossakis.github.io/trivia-game/" class="portfolio-item" target="_blank">
+            <a id="portfolio-item2" href="https://rcbfantasygm.herokuapp.com/" class="portfolio-item" target="_blank">
+                <h2 class="mobile-portfolio-item-label">Fantasy GM</h2>
                 <div id ="image-label-div2"  class="image-label-div">
-                    <img src="assets/images/trivia-game-pic.png" class="portfolio-image"/>
-                    <h2 class="portfolio-item-label">Futurama Trivia Game</h2>
+                    <img src="assets/images/fantasygm-pic.png" class="portfolio-image"/>
+                    <h2 class="portfolio-item-label">Fantasy GM</h2>
                 </div>
-
-                <p class="portfolio-item-description">
-                    This is a trivia game I created based on the animated sitcom "Futurama". Players are asked 5 random questions. Each question is timed and results are displayed once all 5 questions are answered.
-                </p>
+                <div class="portfolio-item-description">
+                    This is a fantasy basketball team managing app. Users can create teams using players from past NBA seasons and run game simulations based on the players' stats from the selected year.
+                </div>
             </a>
-            <a id="portfolio-item3" href="https://crystalespaillat.github.io/Meal-Planner/" class="portfolio-item" target="_blank">
+            <div class="repo-link-container">
+                <a href="https://github.com/grossakis/group-project-2" target="_blank" class="repo-link">Click Here For Github Repo</a>
+            </div>
+            <div class="mobile-portfolio-buttons-div">
+                <a href="https://rcbfantasygm.herokuapp.com/" target="_blank" class="mobile-portfolio-button">site</a>
+                <a href="https://github.com/grossakis/group-project-2" target="_blank" class="mobile-portfolio-button">repo</a>
+                
+                <button class="mobile-portfolio-button" id="about-button2">about</button>
+            </div>
+            <hr class="portfolio-divider"/>
+
+            <a id="portfolio-item3" href="https://grossakis.github.io/Meal-Planner/" class="portfolio-item" target="_blank">
+                <h2 class="mobile-portfolio-item-label">Meal Planner</h2>
                 <div id ="image-label-div3"  class="image-label-div">
                     <img src="assets/images/meal-planner-pic.png" class="portfolio-image"/>
                     <h2 class="portfolio-item-label">Meal Planner</h2>
                 </div>
                 
                 <p class="portfolio-item-description">
-                    Working with a group, I helped to create a meal planning app. Users can explore the Edemam recipe database and bookmark recipes they like. All the recipes that are bookmarked are stored in google's Firebase database and can be viewed along with nutritional value charts for effective and healthy meal planning.
+                    With this app, users can explore the Edemam recipe database and bookmark recipes. Recipes that are bookmarked are stored in google's Firebase database and can be viewed along with nutritional value charts for effective meal planning.
                 </p>
             </a>
+            <div class="repo-link-container">
+                <a href="https://github.com/grossakis/Meal-Planner" target="_blank" class="repo-link">Click Here For Github Repo</a>
+            </div>
+            <div class="mobile-portfolio-buttons-div">
+                <a href="https://grossakis.github.io/Meal-Planner/" target="_blank" class="mobile-portfolio-button">site</a>
+                <a href="https://github.com/grossakis/Meal-Planner" target="_blank" class="mobile-portfolio-button">repo</a>
+                
+                <button class="mobile-portfolio-button" id="about-button3">about</button>
+            </div>
+            <hr class="portfolio-divider"/>
+            
+            <a id="portfolio-item4" href="https://grossakis.github.io/Word-Guess-Game/" class="portfolio-item" target="_blank">
+                <h2 class="mobile-portfolio-item-label">Hangman Game</h2>
+                <div id ="image-label-div4" class="image-label-div">
+                    <img src="assets/images/hangman-game-pic.png" class="portfolio-image"/>
+                    <h2 class="portfolio-item-label">Hangman Game</h2>
+                </div>
+                <div class="portfolio-item-description">
+                    Here is a hangman game I created. Players use the keyboard to guess letters and try and fill the blanks. Pretty straightforward. This one happens to have an animal theme.
+                </div>
+            </a>
+            <div class="repo-link-container">
+                <a href="https://github.com/grossakis/Word-Guess-Game" target="_blank" class="repo-link">Click Here For Github Repo</a>
+            </div>
+            <div class="mobile-portfolio-buttons-div">
+                <a href="https://grossakis.github.io/Word-Guess-Game/" target="_blank" class="mobile-portfolio-button">site</a>
+                <a href="https://github.com/grossakis/Word-Guess-Game" target="_blank" class="mobile-portfolio-button">repo</a>
+                
+                <button class="mobile-portfolio-button" id="about-button4">about</button>
+            </div>
+            <hr class="portfolio-divider"/>
+            
+            <a id="portfolio-item5" href="https://grossakis.github.io/trivia-game/" class="portfolio-item" target="_blank">
+                <h2 class="mobile-portfolio-item-label">Trivia Game</h2>
+                <div id ="image-label-div5"  class="image-label-div">
+                    <img src="assets/images/trivia-game-pic.png" class="portfolio-image"/>
+                    <h2 class="portfolio-item-label">Trivia Game</h2>
+                </div>
+                <div class="portfolio-item-description">
+                    This is a trivia game I created based on the animated sitcom "Futurama". Players are asked 5 random questions. Each question is timed and results are displayed once all 5 questions are answered.
+                </div>
+            </a>
+            <div class="repo-link-container">
+                <a href="https://github.com/grossakis/trivia-game" target="_blank" class="repo-link">Click Here For Github Repo</a>
+            </div>
+            <div class="mobile-portfolio-buttons-div">
+            <a href="https://grossakis.github.io/trivia-game/" target="_blank" class="mobile-portfolio-button">site</a>
+            <a href="https://github.com/grossakis/trivia-game" target="_blank" class="mobile-portfolio-button">repo</a>
+            
+            <button class="mobile-portfolio-button" id="about-button5">about</button>
+        </div>
         </div>
 
     </div>
@@ -84,7 +164,7 @@
             <span class="contact-label">contact</span>
         </div>
         <div class="contact-content hidden-element">
-            <h3>Name</h3>
+            <!-- <h3>Name</h3>
             <input type="text" value="" class="contact-box"><br>
             <h3>Email</h3>
             <input type="text" value="" class="contact-box"><br>
@@ -92,6 +172,18 @@
             <textarea type="text" value="" class="message-box"></textarea><br>
             <br>
             <button type="button" class="submit-button">Submit</button>
+            <br> -->
+
+            <form method="POST" action="http://formspree.io/grossakis@gmail.com">
+                <h3>Email</h3>
+                <input type="email" name="_replyto">
+                <h3>Message</h3>
+                <textarea   name="body"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Send" class="submit-button">
+            </form>
+
 
         </div>
     </div>
@@ -106,6 +198,12 @@
         <img src="assets/images/linkedin-full.png" class="external-logo"/>
     </a>
 
+    <div class="web-portfolio maze-anima-portfolio"></div>
+    <div class="contact-div maze-anima-contact"></div>
+    <div class="maze-anima-home-pic"></div>
+    <div class="maze-anima-link-github"></div>
+    <div class="maze-anima-link-linkedin"></div>
+    <div class="overall-maze-fill"></div>
 </div>
 <script src="assets/javascript/logic.js"></script>
 </body>

@@ -1,0 +1,563 @@
+
+
+/* TABLET QUERY (and up)*/
+@media only screen and (min-width: 769px) {
+    header{
+        padding: 10px 20px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .inside-heading{
+        display: inline;
+        font-size: 24px;
+    }
+    .home-pic-div{
+        top: 50px;
+        -webkit-transition: width 0.8s, height 0.8s;
+        -moz-transition: width 0.8s, height 0.8s;
+        -o-transition: width 0.8s, height 0.8s;
+        transition: width 0.8s, height 0.8s;
+    }
+    .hidden-cover{
+        display: block;
+        -webkit-transition:background-color 0.8s ease;
+        -moz-transition: background-color 0.8s ease;
+        -o-transition: background-color 0.8s ease;
+        transition: background-color 0.8s ease;
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .hov-label{
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        -webkit-transition:color 0.8s ease;
+        -moz-transition: color 0.8s ease;
+        -o-transition: color 0.8s ease;
+        transition: color 0.8s ease;
+        color: rgba(255, 255, 255, 0);
+        top: 50%;
+        left: 33%;
+        font-size: 200%;
+    }
+    .home-pic-div:hover .hidden-cover{
+        background-color: rgba(26, 26, 26, 0.664);
+        
+    }
+    .home-pic-div:hover .hov-label{
+        color: rgb(255, 255, 255);
+    }
+    .home-pic-div:hover{
+        width: 45%;
+        height: 55%;
+        cursor: pointer;
+    }
+    .about-me-div{
+        font-size: 20px;
+    }
+    /* .maze-cover{
+        z-index: -2;
+        position: fixed;
+        background-image: url("../images/bg-seethru.png");
+        height: 100vh;
+        width: 100%;
+    } */
+    .maze-anima-link-github{
+        background-color: rgba(152, 255, 255, 0.6);
+        position: fixed;
+        bottom: -30%;
+        left: 5%;
+        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        z-index: -10;
+        width: 100px;
+        height: 100px;
+    }
+    .maze-anima-link-linkedin{
+        background-color: rgba(152, 255, 255, 0.6);
+        position: fixed;
+        bottom: -30%;
+        right: 5%;
+        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        z-index: -10;
+        width: 100px;
+        height: 100px;
+    }
+    .maze-anima-portfolio{
+        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        z-index: -10;
+        width: 150px;
+        height: 150px;
+    }
+    .maze-anima-contact{
+        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        z-index: -10;
+        width: 150px;
+        height: 150px;
+    }
+    .maze-anima-home-pic{
+        opacity: 0;
+        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        background-color: rgba(152, 255, 255, 0.6);
+        z-index: -10;    
+        height: 45%;
+        width: 40%;
+        position: fixed;
+        top: 120px;
+        right: 30%;
+        -webkit-transition: height 0.8s, width 0.8s;
+        -moz-transition: height 0.8s, width 0.8s;
+        -o-transition: height 0.8s, width 0.8s;
+        transition: height 0.8s, width 0.8s;
+    }
+    .maze-anima-home-pic-hover{
+        height: 50%;
+        width: 45%;
+        -webkit-transition: height 0.8s, width 0.8s;
+        -moz-transition: height 0.8s, width 0.8s;
+        -o-transition: height 0.8s, width 0.8s;
+        transition: height 0.8s, width 0.8s;
+    }
+    .web-portfolio{
+        font-size: 36px;
+        position: fixed;
+        text-align: center;
+        background: rgb(0, 0, 0);
+        border: solid 6px rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 30%;
+        height: 15%;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        top: 15%;
+        left: -35%;
+    }
+    .portfolio-icon{
+        opacity: 1;
+        position: absolute;
+        right: 5%;
+        height: 80%;
+        top: 10%;
+        -webkit-transition:opacity 0.8s ease;
+        -moz-transition: opacity 0.8s ease;
+        -o-transition: opacity 0.8s ease;
+        transition: opacity 0.8s ease;
+        z-index: 1;
+    }
+    .portfolio-label{
+        position: absolute;
+        right: 10%;
+        top: 35%;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+    
+    }
+    .item-hover:hover{
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        width: 40%;
+        height: 20%;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+    }
+    .web-portfolio:hover .portfolio-icon{
+        opacity: 0;
+    }
+    .contact-div{
+        font-size: 36px;
+        position: fixed;
+        text-align: center;
+        background: rgb(0, 0, 0);
+        border: solid 6px rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 30%;
+        height: 15%;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s;
+        top: 15%;
+        right:-35%;
+    }
+    .contact-icon{
+        opacity: 1;
+        position: absolute;
+        left: 5%;
+        height: 80%;
+        top: 10%;
+        -webkit-transition:opacity 0.8s ease;
+        -moz-transition: opacity 0.8s ease;
+        -o-transition: opacity 0.8s ease;
+        transition: opacity 0.8s ease;
+        z-index: 1;
+    }
+    .contact-label{
+        position: absolute;
+        left: 10%;
+        top: 35%;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+    
+    }
+    /* .contact-hover:hover{
+        width: 40%;
+        height: 20%;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s;
+    } */
+    .contact-div:hover .contact-icon{
+        opacity: 0;
+    }
+    .external-link{
+        box-shadow: none;
+        background: rgb(0, 0, 0);
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s, box-shadow 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s, box-shadow 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s, box-shadow 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s,  height 0.8s, box-shadow 0.8s;
+    }
+    .external-link:hover{
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, box-shadow 0.8s;
+    }
+    
+    .github-link{
+        border-radius: 50%;
+        position: fixed;
+        bottom: -30%;
+        left: 5%;
+    }
+    .linkedin-link{
+        border-radius: 5px;
+        position: fixed;
+        bottom: -30%;
+        right: 5%;
+    }
+    .external-icon{
+        position: absolute;
+        opacity: 1;
+        width: 100%;
+        z-index: 1;
+        -webkit-transition:opacity 0.8s;
+        -moz-transition: opacity 0.8s;
+        -o-transition: opacity 0.8s;
+        transition: opacity 0.8s ease;
+    }
+    .external-link:hover .external-icon{
+        opacity: 0;
+        -webkit-transition:opacity 0.8s;
+        -moz-transition: opacity 0.8s;
+        -o-transition: opacity 0.8s;
+        transition: opacity 0.8s ease;
+    }
+    .external-logo{
+        width: 80%;
+        z-index: 0;
+        position: absolute;
+        top: 50px;
+        padding-left: 10px;
+    }
+    .portfolio-item-label{
+        position: relative;
+        bottom: 75px;
+        left: 15px;
+        display: inline-block;
+        font-size: 48px;
+    }
+    .portfolio-image{
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        margin-bottom: -9px;
+    }
+
+
+    .item-hover-maze-anima{
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        width: 40%;
+        height: 20%;
+        -webkit-transition:width 0.8s , height 0.8s, box-shadow 0.8s;
+        -moz-transition: width 0.8s , height 0.8s, box-shadow 0.8s;
+        -o-transition: width 0.8s , height 0.8s, box-shadow 0.8s;
+        transition: width 0.8s , height 0.8s, box-shadow 0.8s;
+    }
+
+    /* central image */
+    .home-pic-div{
+        border: solid 6px rgb(255, 255, 255);
+        border-radius: 10px;
+        opacity: 0;
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 50%; 
+    }
+
+    .inside-heading{
+        color: rgb(107, 107, 107)
+    }
+    body{
+        background-color:rgb(0, 0, 0);
+        /* background-image: url(../images/bg.png); */
+        color: white;
+    }
+    header{
+        position: relative;
+        opacity: 0;
+        margin-bottom: 10px;
+    }
+    /* main content div */
+    .main-content{
+        /* background-image: url("../images/bg.png"); */
+        margin-top:10px;
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 80vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .my-pic {
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        /* width: 100%; */
+        z-index: 0;
+        padding: 10px;
+        height: 50%;
+    }
+    /* .home-pic-div:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 30%,rgb(0, 0, 0) 70%,rgb(0, 0, 0) 100%);
+        position: absolute;
+        top: 0; 
+        left: 0;
+    } */
+    /* about me item classes */
+    .about-me-div{
+        margin: 5% auto;
+        width: 70%;
+        padding: 2%;
+        opacity: 0;
+        color: rgb(0, 0, 0);
+        background-color: rgb(209, 209, 209);
+        -moz-box-shadow:    0 0 15px 15px rgb(209, 209, 209);
+        -webkit-box-shadow: 0 0 15px 15px rgb(209, 209, 209);
+        box-shadow:         0 0 15px 15px rgb(209, 209, 209);
+    }
+    /* potfolio item classes */
+    .web-portfolio{ 
+        text-align: center;
+        background: rgb(0, 0, 0);
+        overflow: visible;
+    }
+    /* contact item classes */
+    .contact-div{
+        text-align: center;
+        background: rgb(0, 0, 0);
+    }
+    /* back arrow styling */
+    .back-arrow-div{
+        width: 3%;
+        position: fixed;
+        top: 18%;
+        left: -4%;
+        opacity: 0;
+        -webkit-transition:width 0.5s;
+        -moz-transition: width 0.5s;
+        -o-transition: width 0.5s;
+        transition: width 0.5s;
+    }
+    .back-arrow{
+        width: 100%;
+    }
+    .back-arrow-div:hover{
+        width: 4%;
+        cursor: pointer;
+    }
+    
+    
+    /* hiding class */
+    .hidden-element{
+        display: none;
+    }
+    
+    .portfolio-content{
+        position: relative;
+        opacity: 0;
+        overflow-x: hidden;
+    }
+    /*  */
+    .portfolio-item{
+        position: relative;
+        display: block;
+        /* border: solid 4px rgb(255, 255, 255); */
+        text-align: left;
+        height: 200px;
+    }
+    .portfolio-item:link, .portfolio-item:visited{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: auto;
+    }
+    .portfolio-item-description{
+        font-size: 24px;
+        margin: 20px;
+        position: absolute;
+        top: 0;
+        display: inline;
+        z-index: -1;
+    }
+    .image-label-div{
+        position: relative;
+        left:0;
+        background: linear-gradient(45deg , rgb(139, 139, 159), rgb(2, 2, 2) , rgb(85, 99, 99));
+        height:200px;
+    }
+    .portfolio-image{
+        height: 200px;
+        width: 200px;
+    }
+    .portfolio-item:hover{
+        cursor: pointer;
+        height: 200px;
+        -moz-box-shadow:    inset 0 0 15px 15px rgb(213, 241, 241);
+        -webkit-box-shadow: inset 0 0 15px 15px rgb(213, 241, 241);
+        box-shadow:         inset 0 0 15px 15px rgb(213, 241, 241);
+    }
+    .repo-link{
+        color:rgb(255, 255, 255);
+        font-size: 18px;
+        text-decoration: none;
+        background-color: rgb(105, 176, 218);
+        width: 100%;
+        padding: 2px;
+        border: solid 4px rgb(121, 202, 248);
+        border-radius: 5px;
+        -webkit-transition: font-size 0.4s;
+        -moz-transition: font-size 0.4s;
+        -o-transition: font-size 0.4s;
+        transition: font-size 0.4s;
+    }
+    .repo-link:hover{
+        font-size:22px;
+        -webkit-transition: font-size 0.4s;
+        -moz-transition: font-size 0.4s;
+        -o-transition: font-size 0.4s;
+        transition: font-size 0.4s;
+        box-shadow: 0 0 20px 2px rgb(80, 80, 80);
+    }
+    .repo-link-container{
+        /* background: linear-gradient(45deg , rgb(139, 139, 159), rgb(2, 2, 2) , rgb(85, 99, 99)); */
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 40px;
+    }
+    .portfolio-divider{
+        margin:0;
+        border: solid 4px rgb(255, 255, 255);
+    }
+    .contact-content{
+        background: linear-gradient(rgb(202, 202, 202), rgb(231, 231, 231) , rgb(201, 201, 201));
+        color: rgb(0, 0, 0);
+        height: 100%;
+    }
+    .contact-content h3{
+        padding: 24px;
+    }
+    .contact-box{
+        width: 80%;
+        height: 24px;
+        border-radius: 5px;
+    }
+    .message-box{
+        width: 80%;
+        height: 72px;
+        border-radius: 5px;
+    }
+    .submit-button{
+        background-color: rgb(73, 73, 73);
+        color: rgb(202, 202, 202);
+        /* border: solid 3px rgb(0, 0, 0); */
+        border-radius: 4px;
+        font-size: 24px;
+    }
+    .home-pic-div-text{
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .overall-maze-fill{
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: -15;
+        height: 500vh;
+        width: 500vh;
+        /* background-color: rgba(152, 255, 255, 0.15); */
+
+        animation: pulse 30s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+          background-color: rgb(28, 112, 112);
+        }
+        25%{
+            background-color: rgb(19, 20, 83);
+        }
+        50% {
+            background-color: rgb(104, 27, 27);
+        }
+        75%{
+            background-color: rgb(27, 100, 24);
+        }
+        100% {
+          background-color: rgb(28, 112, 112);
+        }
+      }
+    
+    .maze-cover{
+        z-index: -2;
+        position: fixed;
+        background-image: url("../images/bg-seethru.png");
+        height: 100vh;
+        width: 100%;
+    }
+    .mobile-portfolio-buttons-div{
+        display: none;
+    }
+    .mobile-portfolio-item-label{
+        display: none;
+    }
+}

@@ -1,0 +1,358 @@
+/* MOBILE QUERY */
+@media only screen and (max-width: 768px) {
+    header{
+        padding: 10px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .inside-heading{
+        display: block;
+        font-size: 24px;
+    }
+    .about-me-div{
+        width: 60%;
+    }
+    /* central image */
+    .home-pic-div{
+        border: solid 6px rgb(255, 255, 255);
+        border-radius: 10px;
+        opacity: 0;
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 50%; 
+    }
+    .hidden-cover{
+        display: none;
+    }
+    .hov-label{
+        display: none;
+    }
+    .about-me-div{
+        font-size: 14px;
+    }
+    .web-portfolio{
+        position: relative;
+        padding: 5px;
+        text-align: center;
+        border: solid 2px rgb(255, 255, 255);
+        width: 30%;
+        border-radius: 5px;
+        margin-left: -260px;
+        float: left;
+    }
+    .portfolio-icon{
+        opacity: 1;
+        width: 20%;
+        z-index: 1;
+        float: right;
+    }
+    .portfolio-label{
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+    }
+    .contact-div{
+        padding: 5px;
+        text-align: center;
+        border: solid 2px rgb(255, 255, 255);
+        width: 30%;
+        border-radius: 5px;
+        margin-right: -260px;
+        float: right;
+    }
+    .contact-icon{
+        opacity: 1;
+        width: 20%;
+        z-index: 1;
+
+        float: left;
+    }
+    .contact-label{
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+    }
+    .linkedin-link{
+        float: right;
+        margin-right: 20%;
+    }
+    .github-link{
+        clear: both;
+        float: left;
+        margin-left: 20%;
+    }
+    .external-icon{
+        width:30%
+    }
+    .external-link{
+        text-align: center;
+        width: 20%;
+        position: relative;
+        bottom: 0px;
+        margin-top: 400px;
+    }
+    .portfolio-content{
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .maze-anima-contact{
+        display: none;
+    }
+    .maze-anima-portfolio{
+        display: none;
+    }
+    .maze-anima-home-pic{
+        display: none;
+    }
+    .maze-anima-link-github{
+        display: none;
+    }
+    .maze-anima-link-linkedin{
+        display: none;
+    }
+
+    .inside-heading{
+        color: rgb(107, 107, 107)
+    }
+    body{
+        background-color:rgb(0, 0, 0);
+        /* background-image: url(../images/bg.png); */
+        color: white;
+    }
+    header{
+        position: relative;
+        opacity: 0;
+        margin-bottom: 10px;
+    }
+    /* main content div */
+    .main-content{
+        /* background-image: url("../images/bg.png"); */
+        margin-top:10px;
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 80vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .my-pic {
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        /* width: 100%; */
+        z-index: 0;
+        padding: 10px;
+        height: 50%;
+    }
+    /* .home-pic-div:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 30%,rgb(0, 0, 0) 70%,rgb(0, 0, 0) 100%);
+        position: absolute;
+        top: 0; 
+        left: 0;
+    } */
+    /* about me item classes */
+    .about-me-div{
+        margin: 5% auto;
+        width: 70%;
+        padding: 2%;
+        opacity: 0;
+        color: rgb(0, 0, 0);
+        background-color: rgb(209, 209, 209);
+        -moz-box-shadow:    0 0 15px 15px rgb(209, 209, 209);
+        -webkit-box-shadow: 0 0 15px 15px rgb(209, 209, 209);
+        box-shadow:         0 0 15px 15px rgb(209, 209, 209);
+    }
+    /* potfolio item classes */
+    .web-portfolio{ 
+        /* z-index: -2; */
+        text-align: center;
+        background: rgb(0, 0, 0);
+        overflow: visible;
+    }
+    /* contact item classes */
+    .contact-div{
+        text-align: center;
+        background: rgb(0, 0, 0);
+    }
+    /* back arrow styling */
+    .back-arrow-div{
+        width: 3%;
+        position: fixed;
+        top: 18%;
+        left: -4%;
+        opacity: 0;
+        -webkit-transition:width 0.5s;
+        -moz-transition: width 0.5s;
+        -o-transition: width 0.5s;
+        transition: width 0.5s;
+    }
+    .back-arrow{
+        width: 100%;
+    }
+    .back-arrow-div:hover{
+        width: 4%;
+        cursor: pointer;
+    }
+    
+    
+    /* hiding class */
+    .hidden-element{
+        display: none;
+    }
+    
+    .portfolio-content{
+        position: relative;
+        opacity: 0;
+        overflow-x: hidden;
+    }
+    /*  */
+    .portfolio-item{
+        position: relative;
+        display: block;
+        /* border: solid 4px rgb(255, 255, 255); */
+        text-align: left;
+    }
+    .portfolio-item:link, .portfolio-item:visited{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: auto;
+    }
+    .portfolio-item-description{
+        font-size: 18px;
+        margin: 40px 20px 20px 20px;
+        position: absolute;
+        top: 0;
+        display: inline;
+        z-index: 0;
+    }
+    .image-label-div{
+        z-index: 1;
+        position: relative;
+        left:0;
+        background: linear-gradient(45deg , rgb(139, 139, 159), rgb(2, 2, 2) , rgb(85, 99, 99));
+    }
+    .portfolio-image{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .portfolio-item-label{
+        display: none;
+    }
+    .mobile-portfolio-item-label{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        display: block;
+        position: absolute;
+        top:0;
+        z-index: 3;
+    }
+    /* .repo-link-container{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 50px;
+        position: relative;
+    } */
+    .repo-link-container{
+        display: none;
+    }
+    .mobile-portfolio-buttons-div{
+        padding: 10px;
+    }
+    .mobile-portfolio-button{
+        color:rgb(255, 255, 255);
+        font-size: 18px;
+        text-decoration: none;
+        background-color: rgb(105, 176, 218);
+        padding: 2px 10px;
+        border: solid 4px rgb(121, 202, 248);
+        border-radius: 5px;
+        margin: 0;
+    }
+    .mobile-portfolio-button:focus{
+        outline: none;
+    }
+    .portfolio-divider{
+        display: none;
+    }
+    .contact-content{
+        background: linear-gradient(rgb(202, 202, 202), rgb(231, 231, 231) , rgb(201, 201, 201));
+        color: rgb(0, 0, 0);
+        height: 93.5%;
+    }
+    .contact-content h3{
+        padding: 24px;
+    }
+    .contact-box{
+        width: 80%;
+        height: 24px;
+        border-radius: 5px;
+    }
+    .message-box{
+        width: 80%;
+        height: 72px;
+        border-radius: 5px;
+    }
+    .submit-button{
+        background-color: rgb(73, 73, 73);
+        color: rgb(202, 202, 202);
+        /* border: solid 3px rgb(0, 0, 0); */
+        border-radius: 4px;
+        font-size: 24px;
+    }
+    .home-pic-div-text{
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .overall-maze-fill{
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: -15;
+        height: 500vh;
+        width: 500vh;
+        background-color: rgba(152, 255, 255, 0.15);
+        animation: pulse 30s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+          background-color: rgb(28, 112, 112);
+        }
+        25%{
+            background-color: rgb(19, 20, 83);
+        }
+        50% {
+            background-color: rgb(104, 27, 27);
+        }
+        75%{
+            background-color: rgb(27, 100, 24);
+        }
+        100% {
+          background-color: rgb(28, 112, 112);
+        }
+      }
+    
+    .maze-cover{
+        z-index: -2;
+        position: fixed;
+        background-image: url("../images/bg-seethru.png");
+        height: 100vh;
+        width: 100%;
+    }
+}
+
