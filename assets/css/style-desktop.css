@@ -8,6 +8,9 @@
     h1{
         font-size: 48px;
     }
+    .bold-emphasis{
+        font-weight: bold;
+    }
     .inside-heading{
         display: inline;
         font-size: 24px;
@@ -39,7 +42,7 @@
         -o-transition: color 0.8s ease;
         transition: color 0.8s ease;
         color: rgba(255, 255, 255, 0);
-        top: 50%;
+        bottom: 10%;
         left: 33%;
         font-size: 200%;
     }
@@ -57,6 +60,7 @@
     }
     .about-me-div{
         font-size: 20px;
+        line-height: 24px;
     }
     /* .maze-cover{
         z-index: -2;
