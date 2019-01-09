@@ -151,7 +151,7 @@ if($(window).width() <= 768){
             if(is_safari){
                 contactDiv.delay(300).animate({marginTop: '20%'})
             }
-            contactDiv.animate({width: '70%' , height: '400px' , marginRight: '15%' } , 800).queue(function(next){
+            contactDiv.animate({width: '70%' , height: '500px' , marginRight: '15%' } , 800).queue(function(next){
                 
                 $('.contact-content').removeClass('hidden-element').animate({ opacity: 1 } , 800);
                 contactDiv.css({height: 'intial'});
@@ -293,7 +293,7 @@ if($(window).width() <= 768){
                     next();
                 });
                 contactDiv.animate({right: '-15%'}, 500);
-                homePicDiv.animate({ top: '5%' });
+                homePicDiv.animate({ top: '50px' });
                 homePicDiv.animate({ opacity: 1 }, 500);
                 homePicMazeHighlight.animate({ top: '120px' });
                 homePicMazeHighlight.animate({ opacity: 1 }, 500);
@@ -372,7 +372,7 @@ if($(window).width() <= 768){
                     next();
                 });
                 portfolioDiv.animate({left: '-15%'}, 500);
-                homePicDiv.animate({ top: '5%' });
+                homePicDiv.animate({ top: '50px' });
                 homePicDiv.delay(300).animate({ opacity: 1 }, 500);
                 homePicMazeHighlight.animate({ top: '120px' });
                 homePicMazeHighlight.delay(300).animate({ opacity: 1 }, 500);

@@ -115,6 +115,16 @@
     }
     .maze-anima-link-github{
         display: none;
+
+        /* background-color: rgb(255, 255, 255);
+        position: fixed;
+        bottom: -30%;
+        left: 5%;
+        box-shadow: 0 0 30px 12px rgb(255, 255, 255);
+        z-index: -10;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; */
     }
     .maze-anima-link-linkedin{
         display: none;

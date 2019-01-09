@@ -55,7 +55,7 @@
     }
     .home-pic-div:hover{
         width: 45%;
-        height: 55%;
+        height: 65%;
         cursor: pointer;
     }
     .about-me-div{
@@ -70,59 +70,67 @@
         width: 100%;
     } */
     .maze-anima-link-github{
-        background-color: rgba(152, 255, 255, 0.6);
+        background-color: rgb(255, 255, 255);
         position: fixed;
         bottom: -30%;
         left: 5%;
-        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        box-shadow: 0 0 30px 12px rgb(255, 255, 255);
         z-index: -10;
         width: 100px;
         height: 100px;
+        border-radius: 50%;
     }
     .maze-anima-link-linkedin{
         background-color: rgba(152, 255, 255, 0.6);
         position: fixed;
         bottom: -30%;
         right: 5%;
-        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        box-shadow: 0 0 30px 12px rgb(255, 255, 255);
         z-index: -10;
         width: 100px;
         height: 100px;
     }
     .maze-anima-portfolio{
-        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        box-shadow: 0 0 30px 12px rgb(255, 255, 255);
         z-index: -10;
         width: 150px;
         height: 150px;
     }
     .maze-anima-contact{
-        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        box-shadow: 0 0 30px 12px rgb(255, 255, 255);
         z-index: -10;
         width: 150px;
         height: 150px;
     }
     .maze-anima-home-pic{
         opacity: 0;
-        box-shadow: 0 0 100px 10px rgb(152, 255, 255);
-        background-color: rgba(152, 255, 255, 0.6);
+        /* box-shadow: 0 0 100px 10px rgb(152, 255, 255); */
+        box-shadow: 0 0 30px 12px rgb(255, 255, 255);
+        /* background-color: rgba(152, 255, 255, 0.6); */
+        background-color: rgb(255, 255, 255);
         z-index: -10;    
-        height: 45%;
-        width: 40%;
+        height: 52%;
+        width: 44%;
         position: fixed;
         top: 120px;
-        right: 30%;
-        -webkit-transition: height 0.8s, width 0.8s;
-        -moz-transition: height 0.8s, width 0.8s;
-        -o-transition: height 0.8s, width 0.8s;
-        transition: height 0.8s, width 0.8s;
+        right: 28%;
+        -webkit-transition: height 0.8s, width 0.8s,right 0.8s;
+        -moz-transition: height 0.8s, width 0.8s,right 0.8s;
+        -o-transition: height 0.8s, width 0.8s,right 0.8s;
+        transition: height 0.8s, width 0.8s,right 0.8s;
     }
     .maze-anima-home-pic-hover{
-        height: 50%;
-        width: 45%;
-        -webkit-transition: height 0.8s, width 0.8s;
-        -moz-transition: height 0.8s, width 0.8s;
-        -o-transition: height 0.8s, width 0.8s;
-        transition: height 0.8s, width 0.8s;
+        height: 60%;
+        width: 50%;
+        right: 25%;
+        -webkit-transition: height 0.8s, width 0.8s,right 0.8s;
+        -moz-transition: height 0.8s, width 0.8s,right 0.8s;
+        -o-transition: height 0.8s, width 0.8s,right 0.8s;
+        transition: height 0.8s, width 0.8s,right 0.8s;
     }
     .web-portfolio{
         font-size: 36px;
@@ -320,7 +328,7 @@
         margin: auto;
         width: 40%;
         background-color: rgba(0, 0, 0, 0.9);
-        height: 50%; 
+        height: 60%; 
     }
 
     .inside-heading{
