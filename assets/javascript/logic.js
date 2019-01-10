@@ -20,6 +20,8 @@ var backArrowDiv = $('.back-arrow-div');
 var aboutMeDiv = $('.about-me-div');
 var gitLink = $('.github-link');
 var linkedinLink = $('.linkedin-link');
+var designDiv = $('.design-samples-div');
+var designDownArrow = $('.design-down-arrow');
 var homePicMazeHighlight = $(".maze-anima-home-pic");
 var gitLinkHighlight = $(".maze-anima-link-github");
 var linkedinLinkHighlight = $(".maze-anima-link-linkedin");
@@ -41,11 +43,13 @@ if($(window).width() <= 768){
     contactDiv.delay(900).animate({marginRight: '15%'}, 800);
     gitLink.delay(1200).animate({marginTop: '50px'} , 800);
     linkedinLink.delay(1500).animate({marginTop: '50px'} , 800);
+    designDiv.delay(2300).animate({bottom: '-12%'} , 400);
 
 
     homePicDiv.on('click' , function(){
         portfolioDiv.animate({marginLeft: '-260px'}, 800);
         contactDiv.animate({marginRight: '-260px'}, 800);
+        designDiv.animate({bottom: '-25%'}, 800);
         backArrowDiv.animate({left: '4%'});
         
         homePicDiv.animate({ opacity: 0 }, 1000).queue(function(next){
@@ -67,6 +71,7 @@ if($(window).width() <= 768){
             backArrowDiv.delay(600).animate({ left: '-4%' });
             portfolioDiv.delay(600).animate({marginLeft: '15%'}, 500);
             contactDiv.delay(600).animate({marginRight: '15%'}, 500);
+            designDiv.delay(600).animate({bottom: '-12%'}, 500);
             homePicDiv.delay(600).animate({ opacity: 1 }, 500);
             setTimeout(function(){aboutMeDiv.addClass('hidden-element')} , 800);
         });
@@ -80,6 +85,7 @@ if($(window).width() <= 768){
             backArrowDiv.animate({left: '4%'});
             homePicDiv.animate({ opacity: 0}, 300);
             contactDiv.animate({marginRight: '-260%'}, 500);
+            designDiv.animate({bottom: '-25%'}, 500);
             homePicDiv.animate({ marginTop: '-500px'}, 500);
             $('.portfolio-icon').animate({opacity: 0}, 500);
             $('.portfolio-icon').css({display:'none'});
@@ -111,6 +117,7 @@ if($(window).width() <= 768){
                 $('.display-label').removeClass('hidden-element');
 
                 contactDiv.animate({marginRight: '15%'}, 800);
+                designDiv.animate({bottom: '-12%'}, 800);
                 homePicDiv.animate({marginTop: 0 ,  opacity: 1 , top: 0}, 800);
                 homePicMazeHighlight.animate({marginTop: 0 ,  opacity: 1}, 800);
                 $('.portfolio-icon').animate({opacity: 1}, 800)
@@ -145,6 +152,7 @@ if($(window).width() <= 768){
             backArrowDiv.animate({left: '4%'});
             homePicDiv.animate({ opacity: 0}, 300);
             portfolioDiv.animate({marginLeft: '-260%'}, 500);
+            designDiv.animate({bottom: '-25%'}, 500);
             homePicDiv.animate({ marginTop: '-500px'}, 500);
             $('.contact-icon').animate({opacity: 0}, 500);
             $('.contact-icon').css({display:'none'});
@@ -176,6 +184,7 @@ if($(window).width() <= 768){
                 $('.display-label').removeClass('hidden-element');
 
                 portfolioDiv.animate({marginLeft: '15%'}, 800);
+                designDiv.animate({bottom: '-12%'}, 800);
                 homePicDiv.animate({marginTop: 0 ,  opacity: 1 , top: 0}, 800);
                 homePicMazeHighlight.animate({marginTop: 0 ,  opacity: 1}, 800);
                 $('.contact-icon').animate({opacity: 1}, 800)
@@ -183,10 +192,61 @@ if($(window).width() <= 768){
             });
         }
         contactClick()
+    });
+
+    designDiv.on('click' , function(){
+
+        function designClick(){
+
+            designDiv.off('click');
+            backArrowDiv.animate({left: '4%'});
+            homePicDiv.animate({ opacity: 0}, 300);
+            portfolioDiv.animate({marginLeft: '-260%'}, 500);
+            contactDiv.animate({marginRight: '-260%'}, 500);
+            homePicDiv.animate({ marginTop: '-500px'}, 500);
+            // $('.contact-icon').animate({opacity: 0}, 500);
+            // $('.contact-icon').css({display:'none'});
+
+            homePicDiv.animate({ top: '-100%' }, 200);
+            if(is_safari){
+                designDiv.delay(300).animate({marginTop: '20%'})
+            }
+            designDiv.animate({height: '75vh', bottom: '10%'} , 100).queue(function(next){
+                
+                $('.design-samples-div-content').removeClass('hidden-element').animate({ opacity: 1 } , 800);
+                // contactDiv.css({height: 'intial'});
+                next();
+            });
+            backArrowDiv.delay(1000).animate({ opacity: 1 }, 1000);
+
+            backArrowDiv.on('click' , function(){
+                backArrowDiv.off('click');
+                designDiv.on('click' , function(){
+                    designClick();
+                });
+                backArrowDiv.animate({opacity: 0}, 600);
+                $('.design-samples-div-content').animate({opacity: 0}, 600);
+                backArrowDiv.delay(600).animate({ left: '-4%' });
+                designDiv.animate({height:'20vh'}, 100)
+                $('.design-samples-div-content').addClass("hidden-element");
+                designDiv.animate({bottom: '-12%'}, 600)
+                homePicDiv.removeClass('hidden-element');
+                $('.display-label').removeClass('hidden-element');
+
+                portfolioDiv.animate({marginLeft: '15%'}, 800);
+                contactDiv.animate({marginRight: '15%'}, 800);
+                homePicDiv.animate({marginTop: 0 ,  opacity: 1 , top: 0}, 800);
+                homePicMazeHighlight.animate({marginTop: 0 ,  opacity: 1}, 800);
+                // $('.contact-icon').animate({opacity: 1}, 800)
+                // $('.contact-icon').css({display:'block'});
+            });
+        }
+        designClick()
     })
 
 
 }else{
+
     $('header').delay(250).animate({opacity: 1} , 1000);
     homePicDiv.delay(1000).animate({ opacity: 1 }, 1000);
     homePicMazeHighlight.delay(1000).animate({ opacity: 1 }, 800);
@@ -196,6 +256,7 @@ if($(window).width() <= 768){
     gitLinkHighlight.delay(1000).animate({bottom: '15%'}, 1200);
     linkedinLink.delay(1200).animate({bottom: '15%'}, 1200);
     linkedinLinkHighlight.delay(1200).animate({bottom: '15%'}, 1200);
+    designDiv.delay(1200).animate({bottom: '-5%'}, 1200);
 
 
     // still to be sorted for responsiveness
@@ -214,6 +275,7 @@ if($(window).width() <= 768){
         gitLinkHighlight.animate({bottom: '-30%'}, 1000);
         linkedinLink.animate({bottom: '-30%'}, 1000);
         linkedinLinkHighlight.animate({bottom: '-30%'}, 1000);
+        designDiv.animate({bottom: '-25%'}, 1000);
         aboutMeDiv.animate({ top: '0' });
 
         aboutMeDiv.delay(1000).animate({ opacity: 1 }, 1000);
@@ -236,7 +298,7 @@ if($(window).width() <= 768){
             gitLinkHighlight.delay(600).animate({bottom: '15%'}, 500);
             linkedinLink.delay(600).animate({bottom: '15%'}, 500);
             linkedinLinkHighlight.delay(600).animate({bottom: '15%'}, 500);
-    
+            designDiv.delay(600).animate({bottom: '-5%'}, 500);
             setTimeout(function(){aboutMeDiv.addClass('hidden-element')} , 800);
         });
     });
@@ -258,7 +320,7 @@ if($(window).width() <= 768){
             gitLinkHighlight.animate({bottom: '-30%'}, 1000);
             linkedinLink.animate({bottom: '-30%'}, 1000);
             linkedinLinkHighlight.animate({bottom: '-30%'}, 1000);
-
+            designDiv.animate({bottom: '-25%'}, 1000);
             homePicDiv.delay(1000).animate({ top: '-100%' }, 1000);
             homePicMazeHighlight.delay(1000).animate({ top: '-100%' }, 1000);
             backArrowDiv.delay(1500).animate({ opacity: 1 }, 1000);
@@ -301,6 +363,7 @@ if($(window).width() <= 768){
                 gitLinkHighlight.delay(300).animate({bottom: '15%'}, 500);
                 linkedinLink.delay(300).animate({bottom: '15%'}, 500);
                 linkedinLinkHighlight.delay(300).animate({bottom: '15%'}, 500);
+                designDiv.delay(300).animate({bottom: '-5%'}, 500);
             });
         }
         portfolioClick()
@@ -326,6 +389,7 @@ if($(window).width() <= 768){
 
     contactDiv.on('click' , function(){
         function contactClick(){
+            console.log('contact clicked')
             contactDiv.off('click');
             $('.display-label').addClass('hidden-element');
             contactDiv.removeClass('item-hover');
@@ -338,7 +402,7 @@ if($(window).width() <= 768){
             gitLinkHighlight.animate({bottom: '-30%'}, 1000);
             linkedinLink.animate({bottom: '-30%'}, 1000);
             linkedinLinkHighlight.animate({bottom: '-30%'}, 1000);
-
+            designDiv.animate({bottom: '-25%'}, 1000);
             homePicDiv.delay(1000).animate({ top: '-100%' }, 1000);
             homePicMazeHighlight.delay(1000).animate({ top: '-100%' }, 1000);
             backArrowDiv.delay(1500).animate({ opacity: 1 }, 1000);
@@ -380,9 +444,68 @@ if($(window).width() <= 768){
                 gitLinkHighlight.delay(300).animate({bottom: '15%'}, 500);
                 linkedinLink.delay(300).animate({bottom: '15%'}, 500);
                 linkedinLinkHighlight.delay(300).animate({bottom: '15%'}, 500);
+                designDiv.delay(300).animate({bottom: '-5%'}, 500);
             });
         }
         contactClick()
+    })
+
+    designDiv.on('click' , function(){
+        function designClick(){
+            designDiv.off('click');
+            $('.display-label').addClass('hidden-element');
+            designDiv.removeClass('design-div-hover');
+            $('.maze-anima-design').removeClass('design-div-hover-maze-anima');
+            homePicDiv.animate({ opacity: 0 }, 1000);
+            homePicMazeHighlight.animate({ opacity: 0 }, 1000);
+            portfolioDiv.animate({left: '-40%'}, 1000);
+            contactDiv.animate({right: '-40%'}, 1000);
+            gitLink.animate({bottom: '-30%'}, 1000);
+            gitLinkHighlight.animate({bottom: '-30%'}, 1000);
+            linkedinLink.animate({bottom: '-30%'}, 1000);
+            linkedinLinkHighlight.animate({bottom: '-30%'}, 1000);
+            homePicDiv.delay(1000).animate({ top: '-100%' }, 1000);
+            homePicMazeHighlight.delay(1000).animate({ top: '-100%' }, 1000);
+
+            designDiv.animate({bottom: '10%', left: '10%', width: '80%' , height: '75vh'},500).queue(function(next){
+                // designDiv.css({overflow:"scroll"});
+                homePicDiv.addClass("hidden-element");
+                homePicMazeHighlight.addClass("hidden-element");
+                $('.design-samples-div-content').removeClass('hidden-element').animate({ opacity: 1 } , 800);
+                next();
+            });
+
+            designDownArrow.on('click' , function(){
+                designDownArrow.off('click');
+                $('.design-samples-div-content').animate({opacity: 0}, 600);
+    
+                designDiv.animate({bottom: '-5%', left: '45%' , width: '10%' , height: '15%'} ,{duration: 400}).queue(function(next){
+                    console.log('arrowTEST')
+                    $('.design-samples-div-content').addClass("hidden-element");
+                    $('.display-label').removeClass('hidden-element');
+                    $(this).attr('style', 'bottom:-5%')
+                    $(this).addClass('design-div-hover');
+                    designDiv.on('click' , function(){
+                        designClick()
+                    });
+                    next();
+                });
+
+                homePicDiv.removeClass('hidden-element');
+                homePicMazeHighlight.removeClass('hidden-element');
+                portfolioDiv.animate({left: '-15%'}, 500);
+                contactDiv.animate({right: '-15%'}, 500);
+                homePicDiv.animate({ top: '50px' });
+                homePicDiv.animate({ opacity: 1 },200);
+                homePicMazeHighlight.animate({ top: '120px' });
+                homePicMazeHighlight.delay(300).animate({ opacity: 1 }, 500);
+                gitLink.delay(300).animate({bottom: '15%'}, 500);
+                gitLinkHighlight.delay(300).animate({bottom: '15%'}, 500);
+                linkedinLink.delay(300).animate({bottom: '15%'}, 500);
+                linkedinLinkHighlight.delay(300).animate({bottom: '15%'}, 500);
+            });
+        }
+        designClick()
     })
 
     gitLink.hover( 
@@ -407,6 +530,17 @@ if($(window).width() <= 768){
         }
     )
 
+    designDownArrow.hover( 
+        function(){
+            $('.down-arrow-highlight').stop();
+            $('.down-arrow-highlight').animate({opacity:1, top: '4.6%'}, 500);
+        },
+        function(){
+            $('.down-arrow-highlight').stop();
+            $('.down-arrow-highlight').animate({opacity:0, top: '4%'}, 200);
+        }
+    )
+
     portfolioDiv.hover( 
         function(){
             $(".maze-anima-portfolio").addClass("item-hover-maze-anima")
@@ -421,6 +555,14 @@ if($(window).width() <= 768){
         },
         function(){
             $(".maze-anima-contact").removeClass("item-hover-maze-anima")
+        }
+    )
+    designDiv.hover( 
+        function(){
+            $(".maze-anima-design").addClass("design-div-hover-maze-anima");
+        },
+        function(){
+            $(".maze-anima-design").removeClass("design-div-hover-maze-anima")
         }
     )
     

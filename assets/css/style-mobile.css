@@ -129,6 +129,9 @@
     .maze-anima-link-linkedin{
         display: none;
     }
+    .maze-anima-design{
+        display: none;
+    }
 
     .inside-heading{
         color: rgb(107, 107, 107)
@@ -342,24 +345,24 @@
         height: 500vh;
         width: 500vh;
         background-color: rgba(152, 255, 255, 0.15);
-        animation: pulse 30s infinite;
+        animation: pulse 20s infinite;
     }
 
     @keyframes pulse {
         0% {
-          background-color: rgb(28, 112, 112);
+          background-color: rgb(39, 151, 151);
         }
         25%{
-            background-color: rgb(19, 20, 83);
+            background-color: rgb(30, 32, 128);
         }
         50% {
-            background-color: rgb(104, 27, 27);
+            background-color: rgb(153, 38, 38);
         }
         75%{
-            background-color: rgb(27, 100, 24);
+            background-color: rgb(39, 146, 36);
         }
         100% {
-          background-color: rgb(28, 112, 112);
+          background-color: rgb(39, 151, 151);
         }
       }
     
@@ -369,6 +372,52 @@
         background-image: url("../images/bg-seethru.png");
         height: 100vh;
         width: 100%;
+    }
+
+    .down-arrow-highlight{
+        display: none;
+    }
+
+    .design-samples-div{
+        position: fixed;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        text-align: center;
+
+
+        width: 69%;
+        height: 20vh;
+
+        -webkit-transition:color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, left 0.8s;
+        -moz-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, left 0.8s;
+        -o-transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, left 0.8s;
+        transition: color 0.8s ease, background-color 0.8s ease, width 0.8s , height 0.8s, left 0.8s;
+        /* bottom: -12%; */
+        bottom: -25%;
+        left: 15%;
+    }
+    .design-sample-image{
+        display: block;
+        margin: 10px;
+        border: none;
+        width: 90%;
+    }
+    .design-sample-label{
+        font-size: 18px;
+        vertical-align: 100%;
+    }
+    .design-icon{
+        width: 10%;
+        margin: 3% 2%;
+    }
+    .design-down-arrow{
+        display: none;
+    }
+    .design-samples-div-content{
+        opacity: 0;
     }
 }
 
