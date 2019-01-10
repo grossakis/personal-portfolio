@@ -49,6 +49,7 @@ if($(window).width() <= 768){
     homePicDiv.on('click' , function(){
         portfolioDiv.animate({marginLeft: '-260px'}, 800);
         contactDiv.animate({marginRight: '-260px'}, 800);
+        $('.external-link').animate({opacity: 0}, 500);
         designDiv.animate({bottom: '-25%'}, 800);
         backArrowDiv.animate({left: '4%'});
         
@@ -73,6 +74,7 @@ if($(window).width() <= 768){
             contactDiv.delay(600).animate({marginRight: '15%'}, 500);
             designDiv.delay(600).animate({bottom: '-12%'}, 500);
             homePicDiv.delay(600).animate({ opacity: 1 }, 500);
+            $('.external-link').delay(600).animate({opacity: 1}, 500);
             setTimeout(function(){aboutMeDiv.addClass('hidden-element')} , 800);
         });
     });
@@ -85,17 +87,18 @@ if($(window).width() <= 768){
             backArrowDiv.animate({left: '4%'});
             homePicDiv.animate({ opacity: 0}, 300);
             contactDiv.animate({marginRight: '-260%'}, 500);
-            designDiv.animate({bottom: '-25%'}, 500);
+            designDiv.animate({bottom: '-50%'}, 500);
             homePicDiv.animate({ marginTop: '-500px'}, 500);
+            $('.external-link').animate({opacity: 0}, 500);
             $('.portfolio-icon').animate({opacity: 0}, 500);
             $('.portfolio-icon').css({display:'none'});
             if(is_safari){
                 portfolioDiv.delay(300).animate({marginTop: '20%'})
             }
-            portfolioDiv.animate({width: '70%' , height: '800px' , marginLeft: '15%'} , 800).queue(function(next){
+            portfolioDiv.animate({width: '70%' , height: '75vh' , marginLeft: '15%'} , 800).queue(function(next){
                 
                 $('.portfolio-content').removeClass('hidden-element').animate({ opacity: 1 } , 800);
-                portfolioDiv.css({height: 'auto'});
+                // portfolioDiv.css({height: 'auto'});
                 next();
             });
             homePicDiv.delay(300).animate({ top: '-100%' }, 1000);
@@ -120,6 +123,7 @@ if($(window).width() <= 768){
                 designDiv.animate({bottom: '-12%'}, 800);
                 homePicDiv.animate({marginTop: 0 ,  opacity: 1 , top: 0}, 800);
                 homePicMazeHighlight.animate({marginTop: 0 ,  opacity: 1}, 800);
+                $('.external-link').animate({opacity: 1}, 800);
                 $('.portfolio-icon').animate({opacity: 1}, 800)
                 $('.portfolio-icon').css({display:'block'});
             });
@@ -154,6 +158,7 @@ if($(window).width() <= 768){
             portfolioDiv.animate({marginLeft: '-260%'}, 500);
             designDiv.animate({bottom: '-25%'}, 500);
             homePicDiv.animate({ marginTop: '-500px'}, 500);
+            $('.external-link').animate({opacity: 0}, 500);
             $('.contact-icon').animate({opacity: 0}, 500);
             $('.contact-icon').css({display:'none'});
             if(is_safari){
@@ -187,6 +192,7 @@ if($(window).width() <= 768){
                 designDiv.animate({bottom: '-12%'}, 800);
                 homePicDiv.animate({marginTop: 0 ,  opacity: 1 , top: 0}, 800);
                 homePicMazeHighlight.animate({marginTop: 0 ,  opacity: 1}, 800);
+                $('.external-link').animate({opacity: 1}, 800);
                 $('.contact-icon').animate({opacity: 1}, 800)
                 $('.contact-icon').css({display:'block'});
             });
@@ -208,6 +214,7 @@ if($(window).width() <= 768){
             // $('.contact-icon').css({display:'none'});
 
             homePicDiv.animate({ top: '-100%' }, 200);
+            $('.external-link').animate({opacity: 0}, 500);
             if(is_safari){
                 designDiv.delay(300).animate({marginTop: '20%'})
             }
@@ -237,6 +244,7 @@ if($(window).width() <= 768){
                 contactDiv.animate({marginRight: '15%'}, 800);
                 homePicDiv.animate({marginTop: 0 ,  opacity: 1 , top: 0}, 800);
                 homePicMazeHighlight.animate({marginTop: 0 ,  opacity: 1}, 800);
+                $('.external-link').animate({opacity: 1}, 800);
                 // $('.contact-icon').animate({opacity: 1}, 800)
                 // $('.contact-icon').css({display:'block'});
             });

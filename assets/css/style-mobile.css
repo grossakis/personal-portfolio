@@ -49,6 +49,7 @@
         border-radius: 5px;
         margin-left: -260px;
         float: left;
+        overflow-y: scroll;
     }
     .portfolio-icon{
         opacity: 1;
@@ -154,8 +155,9 @@
         top:0;
         width: 100%;
         height: 80vh;
-        overflow-x: hidden;
-        overflow-y: auto;
+        /* overflow-x: hidden; */
+        /* overflow-y: auto; */
+        overflow: hidden;
     }
     
     .my-pic {
@@ -194,7 +196,7 @@
         /* z-index: -2; */
         text-align: center;
         background: rgb(0, 0, 0);
-        overflow: visible;
+        /* overflow: visible; */
     }
     /* contact item classes */
     .contact-div{
