@@ -183,6 +183,8 @@
     .about-me-div{
         margin: 5% auto;
         width: 70%;
+        height: 70vh;
+        overflow-y: scroll;
         padding: 2%;
         opacity: 0;
         color: rgb(0, 0, 0);
